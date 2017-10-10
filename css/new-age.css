@@ -30,23 +30,23 @@ Quicksand                     |
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-background: linear-gradient(270deg, #246655, #242566, #afca19);
+.spinbg {
+background: linear-gradient(270deg, rgb(230,66,224), rgb(66,164,230), rgb(66,230,101), rgb(228,251,46));
 background-size: 600% 600%;
-
--webkit-animation: spinbg 22s ease infinite;
--moz-animation: spinbg 22s ease infinite;
-animation: spinbg 22s ease infinite;
-
-@-webkit-keyframes spinbg {
+-webkit-animation-name: example;
+-webkit-animation: example 22s ease infinite alternate;
+-moz-animation: example 22s ease infinite alternate;
+animation: example 22s ease infinite alternate;
+}
+@-webkit-keyframes example {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}  
+}
+@-moz-keyframes example {
     0%{background-position:0% 50%}
     100%{background-position:100% 50%}
-    
 }
-@-moz-keyframes spinbg {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
-}
-@keyframes spinbg { 
+@keyframes example { 
     0%{background-position:0% 50%}
     100%{background-position:100% 50%}
 }
