@@ -241,6 +241,9 @@ th {
   .navbar {
     display: none;
   }
+  nav.navbar.shrink {
+    min-height: 35px;
+  }
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
