@@ -35,9 +35,6 @@ Quicksand                     |
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-.shrink {
-    background-color: blueviolet;
-}
 .spinbg {
 background: linear-gradient(270deg, rgb(230,66,224), rgb(66,164,230), rgb(66,230,101), rgb(228,251,46));
 background-size: 600% 600%;
@@ -87,7 +84,7 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #b23a4a;
+  color: #1f2e35;
 }
 a:hover,
 a:focus {
