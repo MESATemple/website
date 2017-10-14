@@ -21,6 +21,13 @@ Quicksand                     |
     src: url('webfonts/34D955_0_0.eot');
     src: url('webfonts/34D955_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/34D955_0_0.woff2') format('woff2'),url('webfonts/34D955_0_0.woff') format('woff'),url('webfonts/34D955_0_0.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-medium-webfont.woff2') format('woff2'),
+         url('futura-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 #video-background { 
     position: fixed;
     top: 50%;
