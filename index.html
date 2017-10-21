@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<video autoplay loop id="video-background" plays-inline>
+<video autoplay muted loop id="video-background" plays-inline>
   <source src="img/philly.mp4" type="video/mp4">
 </video>
     
@@ -29,9 +29,8 @@
     <!-- Theme CSS -->
     <link href="css/new-age.css" rel="stylesheet">
     
-    <!-- Odometer -->
-    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css"/>
-    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <!-- Animate -->
+    <link rel="stylesheet" href="animate.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,10 +93,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-1">
+                <div class="col-sm-5">
                     <div>
                         <a href="https://www.youtube.com/watch?v=Q6cUBnQpiyk&t=42s&ab_channel=AirCamProductions" target="_blank" class="btn btn-outline page-scroll btn-square" >Video Source</a>
                     </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="animate infinte bounce arrow" style="padding-top:50px"></div>
+                </div>
+                <div class="col-sm-1 col-sm-offset-4" style="padding-top:50px">
+                  <button class="unmute-video"></button>
                 </div>
             </div>
         </div>
@@ -472,6 +477,23 @@
             } else {
                 $('nav').removeClass('shrink');
             }
+        });
+    </script>
+    
+    <script>
+        $("video").prop('muted', false);
+
+        $(".unmute-video").click(function () {
+            if ($("video").prop('muted')) {
+                $("video").prop('muted', false);
+                $(this).addClass('unmute-video');
+                
+            } else {
+                $("video").prop('muted', true);
+                $(this).removeClass('unmute-video');
+                $(this).addClass('mute-video');
+            }
+            console.log($("video").prop('muted'))
         });
     </script>
 
