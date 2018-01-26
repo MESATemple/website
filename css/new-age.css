@@ -28,6 +28,47 @@ Quicksand                     |
     font-weight: normal;
     font-style: normal;
 }
+.nav a {
+    display:block;
+    line-height: 0em;
+    color:#a41e35;
+}
+.nav li ul {
+    background:#fff;
+}
+.nav li ul li {
+    width: 110px;
+}
+.nav li ul a {
+    border:none;
+}
+.nav li ul a:hover {
+    background: rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+.nav3 li:hover ul li {
+  height: 36px;
+}
+.nav3 li ul {
+  position: absolute;
+  left: 0;
+  top: 36px;
+  z-index: 1;
+  padding-left: 0px;
+  margin-top: 14px;
+}
+.nav3 li ul li {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 200ms ease-in;
+  -moz-transition: height 200ms ease-in;
+  -o-transition: height 200ms ease-in;
+  transition: height 200ms ease-in;
+}
+.nav3 li ul li:hover{
+    background-color: grey;
+    
+}
 .arrow {
   position: relative;
   bottom: 0;
@@ -71,26 +112,6 @@ Quicksand                     |
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-}
-.spinbg {
-background: linear-gradient(270deg, rgb(230,66,224), rgb(66,164,230), rgb(66,230,101), rgb(228,251,46));
-background-size: 600% 600%;
--webkit-animation-name: example;
--webkit-animation: example 5s ease-in-out infinite alternate;
--moz-animation: example 5s ease-in-out infinite alternate;
-animation: example 5s ease-in-out infinite alternate;
-}
-@-webkit-keyframes example {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}  
-}
-@-moz-keyframes example {
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
-}
-@keyframes example { 
-    0%{background-position:0% 50%}
-    100%{background-position:100% 50%}
 }
 .pad {
     padding-top: 40px;
