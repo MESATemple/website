@@ -28,6 +28,13 @@ Quicksand                     |
     font-weight: normal;
     font-style: normal;
 }
+.para1{
+    background-image: url(https://media.giphy.com/media/Yy26NRbpB9lDi/giphy.gif);
+    width: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 .nav a {
     display:block;
     line-height: 0em;
